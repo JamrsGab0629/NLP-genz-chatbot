@@ -12,7 +12,7 @@ class SocialMediaChatApp:
 
         # Title Label
         title_label = tk.Label(
-            root, text="🚀 Social Media Project Assistant", 
+            root, text=" Social Media Project Assistant", 
             bg="#1e1e1e", fg="#00ffcc", font=("Helvetica", 14, "bold")
         )
         title_label.pack(pady=12)
