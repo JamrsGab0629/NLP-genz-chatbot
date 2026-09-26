@@ -34,7 +34,7 @@ GEN_Z_SLANG = {
     ],
     "feature": [
         "That feature is straight fire, no cap! Let's prioritize building it.",
-        "Adding that would defs be a major W for the app."
+        "Adding that would defs give our app major creator rizz and be a huge W."
     ],
     "design": [
         "The UI design is looking a bit mid right now, we gotta make it slay.",
@@ -57,3 +57,6 @@ GEN_Z_SLANG = {
         "No cap, I only want to talk about the social media app right now. What's the next feature?"
     ]
 }
+
+# GEN_Z_KEYWORDS: Slang terms to detect in user inputs
+GEN_Z_KEYWORDS = ["bet", "no cap", "cap", "slay", "rizz", "sus", "mid", "fire", "w"]
