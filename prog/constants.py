@@ -23,6 +23,21 @@ INTENT_DATABASE = {
     "profile": [
         "customizing user profile pages and bios",
         "showing follower counts and stats on profiles"
+    ],
+    "backend": [
+        "setting up the backend server and api endpoints",
+        "handling user authentication and server logic",
+        "connecting routes on the backend"
+    ],
+    "database": [
+        "configuring the database to store user posts",
+        "sql or nosql database for managing user data",
+        "database schema design for comments and likes"
+    ],
+    "frontend": [
+        "building the frontend client interface views",
+        "frontend mobile app navigation and routing",
+        "styling the frontend screens to look clean"
     ]
 }
 
@@ -48,6 +63,18 @@ GEN_Z_SLANG = {
         "User profiles definitely need a custom bio section and follower stats, obviously.",
         "That profile layout is giving clean aesthetics, total slay."
     ],
+    "backend": [
+        "No cap, a solid backend architecture keeps the app from crashing. Major W!",
+        "The backend server is cooking clean APIs right now, bet."
+    ],
+    "database": [
+        "Setting up the database tables securely is straight fire, no cap.",
+        "Bet, that database structure is totally optimized for scalability."
+    ],
+    "frontend": [
+        "The frontend UI layout is giving total clean aesthetics, absolute slay.",
+        "No cap, a smooth frontend user experience makes the app go viral."
+    ],
     "general": [
         "No cap, that social media project idea sounds solid. Tell me more about it!",
         "That's a major W for the roadmap. What else are we adding?"
@@ -55,6 +82,9 @@ GEN_Z_SLANG = {
     "scope_violation": [
         "That sounds kind of sus... let's stick to talking about our social media project, bet?",
         "No cap, I only want to talk about the social media app right now. What's the next feature?"
+    ],
+    "easter_egg_dumbel": [
+        "Ohh the dumbel is lifting all our heavy backend logic right now, no cap!"
     ]
 }
 
