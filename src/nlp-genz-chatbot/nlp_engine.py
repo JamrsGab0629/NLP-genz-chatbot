@@ -18,7 +18,7 @@ class NLPEngine:
         # Longest first, so "no cap" is matched before "cap"
         keywords = sorted(GEN_Z_KEYWORDS, key=len, reverse=True)
         self.slang_pattern = re.compile(
-            r"\b(?:" + "|".join(re.escape(k) for k in keywords) + r")\b",
+            r"(?<![\w/-])(?:" + "|".join(re.escape(k) for k in keywords) + r")(?![\w/-])",
             re.IGNORECASE,
         )
         self.dumbel_pattern = re.compile(r"\bdumbel+s?\b", re.IGNORECASE)
@@ -45,6 +45,7 @@ class NLPEngine:
         return float(numerator) / denominator
 
     def detect_user_slang(self, text):
+        text = re.sub(r"(.)\1{2,}", r"\1", text, flags=re.IGNORECASE)  # slayyy -> slay
         matches = [m.lower() for m in self.slang_pattern.findall(text)]
         return list(dict.fromkeys(matches))  # removes duplicates, keeps order
 
